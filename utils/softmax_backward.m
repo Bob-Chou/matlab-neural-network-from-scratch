@@ -8,5 +8,5 @@ function dl = softmax_backward(dp, cache)
     % @ Hint:
     %   You'd better write matrix-wise code
     %=======================================================
-
+    dl = cache.*dp-cache.*sum(cache.*dp, 2);
 end

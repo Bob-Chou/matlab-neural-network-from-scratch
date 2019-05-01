@@ -8,5 +8,7 @@ function [y, cache] = fc_forward(W, b, x)
     %   y: a matrix computed as x * W + b
     %   cache: cache from forward
     %=======================================================
-
+    y = x * W + b;
+    cache.x = x;
+    cache.w = W;
 end

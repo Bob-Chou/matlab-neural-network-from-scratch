@@ -8,5 +8,7 @@ function [dW, db, dx] = fc_backward(dy, cache)
     %   db: gradient of b to downstream, a vector
     %   dx: gradient of x to downstream, a matrix in [batch, dimension] format
     %=======================================================
-
+    dW = (cache.x)'*dy;
+    dx = dy*(cache.w)';
+    db = sum(dy, 1);
 end

@@ -9,5 +9,6 @@ function [loss, cache] = cross_entropy_forward(probs, y)
     % @ Hint:
     %   loss should be sumed up to a scalar
     %=======================================================
-
+    loss = -sum(sum(y.*log(probs)));
+    cache = y;
 end

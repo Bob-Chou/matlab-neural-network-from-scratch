@@ -6,5 +6,6 @@ function [y, cache] = relu_forward(x)
     %   y: a matrix identical with relu(x)
     %   cache: cache from forward
     %=======================================================
-
+    y = max(x, 0);
+    cache = y;
 end

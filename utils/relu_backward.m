@@ -6,5 +6,5 @@ function dx = relu_backward(dy, cache)
     % @ returns:
     %   dx: gradient of logits to downstream, a matrix in [batch, dimension] format
     %=======================================================
-
+    dx = dy.*(cache > 0);
 end

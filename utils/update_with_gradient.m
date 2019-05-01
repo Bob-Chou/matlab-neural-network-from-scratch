@@ -7,5 +7,5 @@ function new_param= update_with_gradient(param, grad, lr)
     % @ returns:
     %   new_param: new parameter
     %=======================================================
-
+    new_param = param - lr*grad;
 end

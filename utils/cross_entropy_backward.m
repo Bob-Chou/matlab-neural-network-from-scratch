@@ -6,5 +6,5 @@ function dp = cross_entropy_backward(probs, cache)
     % @ returns:
     %   dp: gradient of probs to downstream, a matrix in [batch, categories] format
     %=======================================================
-
+    dp = -cache./probs;
 end

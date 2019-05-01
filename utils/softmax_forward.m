@@ -8,5 +8,6 @@ function [probs, cache] = softmax_forward(logits)
     % @ Hint:
     %   probs = exp(logits[single_category])/sum(exp(logits))
     %=======================================================
-
+    probs = exp(logits)./sum(exp(logits),2);
+    cache = probs;
 end
