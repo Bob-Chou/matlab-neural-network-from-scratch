@@ -11,11 +11,11 @@ num_categories = 10;
 num_hidden_dims = 32;
 num_image_dims = 28 * 28;
 
-lr = 1e-1;
+lr = 1e-2;
 decay_ratio = 0.1;
-decay_step = 500;
+decay_step = 1000;
 batch_size = 32;
-total_step = 3000;
+total_step = 5000;
 init_eps = 0.08;
 
 print_every = 100;
